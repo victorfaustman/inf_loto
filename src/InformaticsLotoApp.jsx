@@ -5,11 +5,13 @@ import { CheckCircle2, XCircle, RotateCcw, Trophy, Sparkles, Monitor, MousePoint
 const Card = ({ className = "", children }) => <div className={className}>{children}</div>;
 const CardContent = ({ className = "", children }) => <div className={className}>{children}</div>;
 const Button = ({ className = "", children, ...props }) => (
-  <button className={`bg-sky-600 text-white hover:bg-sky-700 disabled:cursor-not-allowed disabled:opacity-50 ${className}`} {...props}>
+  <button
+    className={`bg-sky-600 text-white hover:bg-sky-700 disabled:cursor-not-allowed disabled:opacity-50 ${className}`}
+    {...props}
+  >
     {children}
   </button>
 );
-
 
 const QUESTIONS = [
   {
@@ -379,3 +381,4 @@ export default function InformaticsLotoApp() {
     </div>
   );
 }
+
